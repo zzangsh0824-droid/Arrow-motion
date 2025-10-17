@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#info {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#arrow {
+  font-size: 8rem;
+  transition: transform 0.3s ease;
+}
+
+.booster {
+  color: #fff700;
+  text-shadow:
+    0 0 10px #fff700,
+    0 0 20px #ffea00,
+    0 0 40px #ffd000,
+    0 0 60px #ffaa00;
+  animation: wave 1.2s infinite linear;
+}
+
+@keyframes wave {
+  0% { text-shadow: 0 0 10px #fff700, 0 0 20px #ffea00; }
+  50% { text-shadow: 0 0 40px #ffd000, 0 0 60px #ffaa00; }
+  100% { text-shadow: 0 0 10px #fff700, 0 0 20px #ffea00; }
+}
